@@ -50,9 +50,6 @@ deploy:
     file: yourapp.apk
     skip_cleanup: true
     on:
-        repo: githubUsername/Repository
+        repo: Tim-Jackins/ftc_app
         tags: true
         jdk: oraclejdk8
-    api_key:
-        secure: here goes the encrypted api key
-
