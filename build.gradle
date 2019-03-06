@@ -28,3 +28,7 @@ allprojects {
         jcenter()
     }
 }
+
+lintOptions {
+    abortOnError false
+}
