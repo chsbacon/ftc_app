@@ -35,7 +35,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.Range;
 
-import org.firstinspires.ftc.robotcontroller.external.samples.HardwareK9bot;
+//import org.firstinspires.ftc.robotcontroller.external.samples.HardwareK9bot;
 
 /**
  * This OpMode uses the common HardwareK9bot class to define the devices on the robot.
