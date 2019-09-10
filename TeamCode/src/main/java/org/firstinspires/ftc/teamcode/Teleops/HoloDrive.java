@@ -1,13 +1,10 @@
-package org.firstinspires.ftc.teamcode.Teleop;
+package org.firstinspires.ftc.teamcode.Teleops;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.firstinspires.ftc.teamcode.HoloHardwareClass;
-import org.firstinspires.ftc.teamcode.LearningHardwareClass;
-import org.firstinspires.ftc.teamcode.MasterHardwareClass;
 
-@TeleOp(name = "Holonomic Robot", group = "Holo")
+@TeleOp(name = "David's New and Improved Holonomic Robot", group = "Holo")
 
 public class HoloDrive extends LinearOpMode{
     HoloHardwareClass robot = new HoloHardwareClass();
