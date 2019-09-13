@@ -22,6 +22,8 @@ public class HoloHardwareClass {
     //Main method
     public void init(HardwareMap ahwMap){
         //get the motors from the hardware map
+        
+        hardwareMap = ahwMap;
         frontMotor = hardwareMap.dcMotor.get("FM");
         backMotor = hardwareMap.dcMotor.get("BM");
         rightMotor = hardwareMap.dcMotor.get("RM");
