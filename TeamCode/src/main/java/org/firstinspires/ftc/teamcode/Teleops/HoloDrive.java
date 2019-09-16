@@ -3,7 +3,9 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.HoloHardwareClass;
-
+//TODO make a rotation ability
+// TODO run using encoders,
+//TODO put function in hardware class
 @TeleOp(name = "David's New and Improved Holonomic Robot", group = "Holo")
 
 public class HoloDrive extends LinearOpMode{
@@ -29,10 +31,10 @@ public class HoloDrive extends LinearOpMode{
             rightLeftPos  = (gamepad1.left_stick_x);
             upDownPos = (gamepad1.left_stick_y);
 
-            robot.frontMotor.setPower(upDownPos);
-            robot.backMotor.setPower(upDownPos);
-            robot.leftMotor.setPower(rightLeftPos);
-            robot.rightMotor.setPower(rightLeftPos);
+            robot.rightMotor.setPower(upDownPos);
+            robot.leftMotor.setPower(-1*upDownPos);
+            robot.backMotor.setPower(rightLeftPos);
+            robot.frontMotor.setPower(-1*rightLeftPos);
         }
     }
 
