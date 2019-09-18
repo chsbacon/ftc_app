@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.Teleops;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.firstinspires.ftc.teamcode.HoloHardwareClass;
 //TODO make a rotation ability
@@ -23,6 +24,7 @@ public class HoloDrive extends LinearOpMode{
         float rightPower;
         float frontPower;
         float backPower;
+        float spinAdjust;
         int frontPos;
         //tell the phones you are ready
         telemetry.addLine("Ready to Run!");
@@ -48,8 +50,8 @@ public class HoloDrive extends LinearOpMode{
             robot.backMotor.setPower(backPower);
             robot.frontMotor.setPower(frontPower);
             
-            frontPos = frontMotor.getCurrentPosition();
-            telemetry.addData("Front Position"+frontPos);
+            frontPos = robot.frontMotor.getCurrentPosition();
+            telemetry.addData("Front Position", frontPos);
 
 
         }
